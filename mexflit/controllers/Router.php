@@ -9,11 +9,8 @@ class Router
             //'auto_start'=>1,
             'read_and_close' => false
         );
-
         if (!isset($_SESSION)) session_start($session_options);
-
         if (!isset($_SESSION['ok'])) $_SESSION['ok'] = false;
-
         if ($_SESSION['ok']) {
             $this->route = isset($_GET['r']) ? $_GET['r'] : 'home';
             $controller = new ViewController();

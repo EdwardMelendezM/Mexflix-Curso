@@ -2,7 +2,6 @@
 if( $_POST['r'] == 'movieserie-show' && isset($_POST['imdb_id']) ) {
 
 	$ms_controller = new MovieSeriesController();
-
 	$ms = $ms_controller->get($_POST['imdb_id']);
 
 	if( empty($ms) ) {
