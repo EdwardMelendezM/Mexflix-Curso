@@ -59,7 +59,7 @@ else if($_POST['r']=='user-add' && $_SESSION['role']=='Admin' && $_POST['crud']=
             }
         </script>
     ';
-    printf($template,$_POST['user']);
+    printf($template,$_POST['user']);   
 }else{
     //Recurso no autorizado
     $controller= new ViewController();

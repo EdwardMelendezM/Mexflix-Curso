@@ -1,4 +1,3 @@
-
 USE mexflix;
 
 /*Tabla Catálogo*/

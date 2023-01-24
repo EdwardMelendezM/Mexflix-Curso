@@ -14,7 +14,6 @@ if($_POST['r']=='status-add' && $_SESSION['role']=='Admin' && !isset($_POST['cru
     </form>
 
     ');
-
 }
 else if($_POST['r']=='status-add' && $_SESSION['role']=='Admin' && $_POST['crud']=='set'){
     //Programar la insersion

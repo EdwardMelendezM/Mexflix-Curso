@@ -4,7 +4,6 @@ class UserModels extends Model {
 		foreach ($user_data as $key => $value) {
 			$$key = $value;
 		}
-
 		$this->query = "REPLACE INTO users (user, email, name, birthday, pass, role) VALUES ('$user', '$email', '$name', '$birthday', MD5('$pass'), '$role')";
 		$this->set_query();
 	}
